@@ -1,0 +1,30 @@
+Aim:
+
+The aim of this exercise is to use Angular.js.
+It requires that you write an app that retrieves a
+JSON data packet using Angular, and then display the
+three items with their titles. Clicking on the title
+of any of the items displays all the details for that
+item (title, body, author) in another area on the same
+page, without reloading the page.
+
+
+
+Breakdown of tasks:
+
+1.  Retrieve JSON data
+    1.1 Iterate through data and grab the titles.
+2.  Display Items with their titles
+    2.1 display titles only
+3.  Add functionality to display in same page without refreshing
+4.  Make it look nice
+    4.1 Include and use bootstrap
+
+Start learning angular by reading documentation. :)
+
+
+
+ The journey, started out with learning some angular js to achieve the
+ tasks that I wanted.
+
+ Using debug tools in chrome, and the non minified version of angularjs.
