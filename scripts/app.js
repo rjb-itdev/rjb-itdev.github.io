@@ -11,10 +11,13 @@ var app=angular.module("app",["ngRoute"])
   })
   $locationProvider .html5Mode(true);
 })
-.controller("bookController",function($scope){
-  $scope.message="Hi Im in books";
-})
 .controller("dataController",function($scope, $http){
+  $http.get("data.json").then(function(response){
+    var myData=response.data;
+    $scope.myData=myData;
+  })
+})
+.controller("bookController",function($scope, $http){
   $http.get("data.json").then(function(response){
     var myData=response.data;
     $scope.myData = myData;

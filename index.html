@@ -15,22 +15,24 @@
     <title>Books</title>
   </head>
   <body >
-    <!--Using Routes to generate pages from json data dynamically-->
-    <h1>Home Page</h1>  
-    <!-- get title of book from data, add to ul -->
+    <!--Using Routes to generate pages from JSON dynamically-->
+    <h1>Home Page</h1>
+      
+    <!-- get title of book from data, add to ul to display possible books -->
     <h4>
       <a href="/">Home</a>
       <a href="book">Books</a>
     </h4> 
     <div ng-controller="dataController">
-
       <ul ng-repeat="book in myData">
-        <li><a href=""></a>{{book.title}}</li>
+        <li><a href="#"></a>{{book.title}}</li>
       </ul>
     </div>
-      
-    
-    <ng-view></ng-view>
+
+    <!--ng-view shows to the side in the same page without 'reloading' the page-->
+    <div>
+      <ng-view></ng-view>
+    </div>
 
 
   </body>
