@@ -3,7 +3,7 @@ var app=angular.module("app",["ngRoute"])
   $routeProvider
   .when("/book",{
     controller: "bookController",
-    templateUrl:"/Templates/book.html"
+    templateUrl:"./Templates/book.html"
   })
   $locationProvider .html5Mode(true);
 })
