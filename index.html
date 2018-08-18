@@ -17,9 +17,14 @@
   <body >
     <!--Using Routes to generate pages from json data dynamically-->
     <h1>Home Page</h1>  
-    <a href="/">Home</a>
-    <a href="book">Books</a>
-      
+    <!-- get title of book from data, add to ul -->
+    <h4>
+      <a href="/">Home</a>
+      <a href="book">Books</a>
+    </h4> 
+    <ul ng-repeat="dataController">
+      <li><a href=""></a>{{data.title}}</li>
+    </ul>  
     <ng-view></ng-view>
 
 
