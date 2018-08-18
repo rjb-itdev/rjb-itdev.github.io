@@ -5,6 +5,10 @@ var app=angular.module("app",["ngRoute"])
     controller: "bookController",
     templateUrl:"./Templates/book.html"
   })
+  .when("/home",{
+    controller: "homeController",
+    templateUrl:"/"
+  })
   $locationProvider .html5Mode(true);
 })
 .controller("bookController",function($scope){
