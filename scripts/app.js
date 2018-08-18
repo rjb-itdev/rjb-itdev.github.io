@@ -5,6 +5,9 @@ var app=angular.module("app",["ngRoute"])
     controller: "bookController",
     templateUrl:"./Templates/book.html"
   })
+  .when("/book/:title",{
+    templateUrl: "./Templates/book.html"
+  })
   .when("/home",{
     controller: "homeController",
     templateUrl:"/"
@@ -16,6 +19,7 @@ var app=angular.module("app",["ngRoute"])
     var myData=response.data;
     $scope.myData=myData;
   })
+  $scope.message="Hi Im in books";
 })
 .controller("bookController",function($scope, $http){
   $http.get("data.json").then(function(response){
