@@ -14,9 +14,9 @@ var app=angular.module("app",["ngRoute"])
 .controller("bookController",function($scope){
   $scope.message="Hi Im in books";
 })
-.controller("dataControlller",function($scope, $http){
+.controller("dataController",function($scope, $http){
   $http.get("data.json").then(function(response){
     var myData=response.data;
-    console.log(myData);
+    $scope.myData = myData;
   })
 });
