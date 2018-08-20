@@ -1,1 +1,0 @@
-Make call to provided url and retrieve JSON data.
