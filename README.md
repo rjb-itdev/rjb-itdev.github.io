@@ -1,14 +1,14 @@
 # rjb-itdev.github.io
 
 
-#The Journey
+#The Journey#
 
-##A foray into AngularJS
+##A foray into AngularJS##
 
 While this might not be the neatest or well laid out refactored code, I feel that this is my best effort in a relatively 
 short amount of time a lack of practice and experience with this framework.
 
-###Analysis 
+###Analysis## 
 
 I saw that I needed to handle data, auto-generate links and, have a way to show information without reloading the page.
 A way to select the correct book by link.
@@ -16,7 +16,7 @@ A way to select the correct book by link.
 As data can change (be dynamic) I thought that a good idea was to make the application able to handle 
 a more books without having to rewrite parts of the application.
 
-###Learning
+###Learning###
 Starting out by reading documentation to get a handle on where to begin.
 I read about the development environment and, how to procure the required files to use the framework. 
 
@@ -29,7 +29,7 @@ and provided examples on how to iterate, and filter data.
 As stackoverflow as usual was an abundance of information. (not all was helpful)
 
 
-###Difficulties ;)
+###Difficulties###
 *Initially starting out development without a webserver and coming across CORS. I used node to overcome this and ran a simple
 http server to eliminate this problem.
 *Finding a way to select by title as per my requirements analysis.
