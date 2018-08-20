@@ -4,8 +4,8 @@ angular.
     .component('bookList',{
         template:
 
-        '<ul class="nav navbar-nav"" >' 
-        + '<li" ng-repeat="book in $ctrl.library">'
+        '<ul class="nav nav-pills flex-column" >' 
+        + '<li" class="nav-item" ng-repeat="book in $ctrl.library">'
         + '<a href="/{{book.title}}">{{book.title}}</a>' //query by value, get the URI from the browser(dom) and use that to query json in book-details.component
         + '</li>'
         + '</ul>'
