@@ -44,6 +44,8 @@ to select by title from the json data.
 I think that providing a look at this application will be more benefical at this time. Continued development will be on another
 branch, as things progress and it gets better I will push it to master.
 
+Make it prettier
+
 ##### The list
 * Refactor
   * I have some calls to $http that can be refactored to a seperate module
