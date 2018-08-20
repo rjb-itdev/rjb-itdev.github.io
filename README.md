@@ -33,9 +33,9 @@ As stackoverflow as usual was an abundance of information. (not all was helpful)
 * Initially starting out development without a webserver and coming across CORS. I used node to overcome this and ran a simple
 http server to eliminate this problem.
 * Finding a way to select by title as per my requirements analysis.
-..* After some thinking I came up with the idea to parse the url and select by title from the data. As the data did not have a 
+  * After some thinking I came up with the idea to parse the url and select by title from the data. As the data did not have a 
 unique identifier I felt that this was the most logical choice at the time.
-..* I think this is a possible problem, due to the possibility of duplicate title data.
+  * I think this is a possible problem, due to the possibility of duplicate title data.
 * Reloading the page gives a 404 response. I am still unsure as to why this is, after researching I found that modifying the
 .htaccess file can remedy this problem but I get the feeling that it is the way I have structured my routing or, using $location
 to select by title from the json data.
@@ -46,12 +46,13 @@ branch, as things progress and it gets better I will push it to master.
 
 ##### The list
 * Refactor
-..* I have some calls to $http that can be refactored to a seperate module
-..* General tidying up of code
-..* Check for redundant code
-..* Check that variable names make sense and match their task
+  * I have some calls to $http that can be refactored to a seperate module
+  * General tidying up of code
+  * Check for redundant code
+  * Check that variable names make sense and match their task
+
 * Learn how to write tests in AngularJS. In hindsight this would have been a better place to start developement.
-..*Write tests to check my code
+  * Write tests to validate my code
 
 ### My thoughts on this
 It was fun, I found a new framework to work with and thoroughly enjoyed it. Even if nothing comes from it I have had a good
