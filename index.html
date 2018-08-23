@@ -22,22 +22,25 @@
 <body>
     <div class="container-fluid">
         <div class="row">
+            <!--NAV Bar start-->
             <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+
                 <div class="navbar-header">
                     <h2>
-                        <a class="navbar-brand" href="/">Books</a>
+                        <a class="navbar-brand" href='#'>Books</a>
                     </h2>
                     <book-list></book-list>
                     <!--Component that lists books in the library-->
                 </div>
             </nav>
-            <div class="col-sm-9 offset-sm-3" ng-view></div>  
+            <!--NavBar END-->
+            <div class="col-sm-9 offset-sm-3">
+                Book Content goes here
+            </div>  
         </div>                    
     </div>
     <!--Add additional script under here as we need them and our application develops-->
+    <script type="text/javascript" src="services/library-service.js"></script>
     <script type="text/javascript" src="app/library-app.js" ></script>
-    <script type="text/javascript" src="components/library-books.component.js" ></script>
-    <script type="text/javascript" src="components/book-details.component.js" ></script>
-    <script type="text/javascript" src="controllers/library-controller.js" ></script>
 </body>
 </html>
