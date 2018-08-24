@@ -5,7 +5,9 @@
 
 ## A foray into AngularJS
 
-##### Next Steps: ###### Learn about and implement some tests
+##### Next Steps: 
+
+##### Learn about and implement some tests
 
 #### 24/08/2018 
 
