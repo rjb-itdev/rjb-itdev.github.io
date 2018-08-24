@@ -1,6 +1,19 @@
-app.controller('LibraryController',function($scope){
+//My job is to pass data from the model to the view, in this case I am passing a JSON file with books in
+app.controller("libraryController",function($scope, books){
     
-    //make a call to a service to get the data
-    
+    //Retrieve Library
+    books.query(function(data){
+        $scope.library = data;
+    },function(err){
+        console.error('An Error occured retrieving - Library ', err);
+    })
 
-})
+    //Get book details by index
+    $scope.searchByIndex = function($index){
+        //console.log($index);
+        //console.log($scope.library[$index]);
+        $scope.bookDetails = $scope.library[$index];
+        return $scope.bookDetails;
+    }
+
+});

@@ -1,5 +1,4 @@
-
+//Declare and initialize application
 var app = angular.module("libraryApp"
-    ,["ngRoute"
-    ,"ngResource"
+    ,["ngResource"
     ,"ngSanitize"])

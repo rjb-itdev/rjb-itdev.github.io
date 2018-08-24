@@ -2,45 +2,60 @@
 <html lang="en" ng-app="libraryApp">
 <head>
     <!--Add base for later routing from root directory-->
-    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap no js-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <title>Library</title>
+</head>
+<body ng-controller="libraryController">
+    <div class="container-fluid">
+        <div class="row">
+            <!--NAV Bar start-->
+            <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar"  >
+                <div class="navbar-header" >
+                    <ul class="list-group"  > <!--Controller that lists books in the library-->
+                        <li class="list-group-item list-group-item-primary">
+
+                            <h2>
+                                <a class="navbar-brand" href='index.html'>Books</a>
+                            </h2>
+                        </li>                                                        
+                        <li class="list-group-item list-group-item-light" ng-repeat="book in library track by $index" >
+                            <a ng-click="searchByIndex($index)" ng-model="details" href  >{{book.title}}</a>.
+                            
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--NavBar END-->
+            <!--Content Start-->
+            <div class="col-sm-5 offset-sm-1"><br>
+                <p>
+                <h3 ng-bind-html="bookDetails.title">  </h3>
+                </p>
+                <br>
+                <p ng-bind-html="bookDetails.body">   </p><br/>
+                <p>
+                <strong ng-bind-html="bookDetails.author"></strong>
+                </p> 
+            </div>
+            <!--Content End-->
+        </div>                    
+    </div>
 
     <!-- AngularJs Non-minified for debugging-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.js" ></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-route.js" ></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-resource.js" ></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-sanitize.js" ></script>
-       
-    
-    <!--Bootstrap no js-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <title>Document</title>
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <!--NAV Bar start-->
-            <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
 
-                <div class="navbar-header">
-                    <h2>
-                        <a class="navbar-brand" href='#'>Books</a>
-                    </h2>
-                    <book-list></book-list>
-                    <!--Component that lists books in the library-->
-                </div>
-            </nav>
-            <!--NavBar END-->
-            <div class="col-sm-9 offset-sm-3">
-                Book Content goes here
-            </div>  
-        </div>                    
-    </div>
     <!--Add additional script under here as we need them and our application develops-->
-    <script type="text/javascript" src="services/library-service.js"></script>
     <script type="text/javascript" src="app/library-app.js" ></script>
+    <script type="text/javascript" src="app/controllers/library.controller.js" ></script>
+    <script type="text/javascript" src="app/factorys/library-factory.js" ></script>    
 </body>
 </html>

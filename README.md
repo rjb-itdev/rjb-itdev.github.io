@@ -5,8 +5,24 @@
 
 ## A foray into AngularJS
 
-While this might not be the neatest or well laid out refactored code, I feel that this is my best effort in a relatively 
-short amount of time a lack of practice and experience with this framework.
+##### Next Steps: ###### Learn about and implement some tests
+
+#### 24/08/2018 
+
+This is an updated version of the exercise that I was given. In the time between initial submission I have continued
+to learn and develop my skills in AngularJS.
+
+
+The initial solution proved to be inefficient, buggy and was overkill for the task at hand. It demonstrated my lack of 
+skill in AngularJS, but I felt that it showed I was able to think outside the box for a valid solution to a problem.
+
+This is my latest attempt at developing a simple single page application. Initially I found that I was having trouble 
+understanding how $scope worked when handling data between controllers, I am still coming to grips with this, however
+in this single page application by only having one small controller.
+
+RjB.
+
+### 16/08/2018
 
 ### Analysis
 
@@ -27,6 +43,7 @@ The requirements analysis deemed that using views to insert data into a page was
 As well as generating views I needed a way to iterate over data to generate the links, documentation proved helpful here
 and provided examples on how to iterate, and filter data. 
 As stackoverflow as usual was an abundance of information. (not all was helpful)
+
 
 
 ### Difficulties
