@@ -18,7 +18,7 @@ skill in AngularJS, but I felt that it showed I was able to think outside the bo
 
 This is my latest attempt at developing a simple single page application. Initially I found that I was having trouble 
 understanding how $scope worked when handling data between controllers, I am still coming to grips with this, however
-in this single page application by only having one small controller.
+in this single page application has only one small controller.
 
 RjB.
 
