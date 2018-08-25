@@ -9,6 +9,14 @@
 
 ##### Learn about and implement some tests
 
+#### 25/08/2018
+
+Corrected bootstrap version, and added style. 
+
+####TODO
+
+* Create promise for ng-resource so the page waits till the data is ready before displaying book titles.
+
 #### 24/08/2018 
 
 This is an updated version of the exercise that I was given. In the time between initial submission I have continued
