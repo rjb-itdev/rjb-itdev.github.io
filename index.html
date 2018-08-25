@@ -2,30 +2,23 @@
 <html lang="en" ng-app="libraryApp">
 <head>
     <meta charset="UTF-8">
-    <meta>
-    <meta>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Library</title>
     <!-- CSS - Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
 <body ng-controller="libraryController">
     <div class="container-fluid">
-            <!--Top-nav Bar start-->
+    <!--Top-nav Bar start-->
         <div class="navbar">
             <div class="navbar-inner">
                 <a class="brand"><h2>Library</h2></a>
                 <ul class="nav">
-                    <li>
-                        <a href="#"><h3> Books </h3></a>
+                    <li><a href="#"><h3>Books</h3></a>
+                    </li><li class="disabled"><a href="#"><h3>About</h3></a>
                     </li>
-                    <li class="disabled">
-                        <a href="#"><h3> About </h3></a>
-                    </li>
-                    <li class="disabled">
-                        <a href="#"><h3> Contact </h3></a>
-                    </li>
+                    <li class="disabled"><a href="#"><h3>Contact</h3></a></li>
                 </ul>
             </div>
         </div>            
@@ -35,9 +28,7 @@
             <div class="span3">
                 <nav>
                     <ul class="nav nav-list">
-                        <li class="nav-header">                            
-                            <h4><a href='index.html'>Title</a></h4>
-                        </li>   
+                        <li class="nav-header"><h4><a href='index.html'>Title</a></h4></li>   
                         <li class="divider"></li>                                                     
                         <li ng-repeat="book in library track by $index" >
                             <a ng-click="searchByIndex($index)" ng-model="details" href  >{{book.title}}</a>  
@@ -45,7 +36,7 @@
                     </ul>
                 </nav>
             </div>
-            <!--NavBar END-->
+            <!--Side Nav end-->
             <!--Content Start-->
             <div class="span9">
                 <br>

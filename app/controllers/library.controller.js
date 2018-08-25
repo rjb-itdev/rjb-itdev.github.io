@@ -1,5 +1,7 @@
 //My job is to pass data from the model to the view, in this case I am passing a JSON file with books in
-app.controller("libraryController",function($scope, books){
+"use strict";
+angular.module("libraryApp")
+    .controller("libraryController",function($scope, books){
     
     //Retrieve Library
     books.query(function(data){

@@ -1,4 +1,5 @@
 //Declare and initialize application
-var app = angular.module("libraryApp"
+"use strict";
+angular.module("libraryApp"
     ,["ngResource"
     ,"ngSanitize"])
